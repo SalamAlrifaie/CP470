@@ -2,5 +2,12 @@
 <resources>
     <string name="app_name">AndroidAssignments</string>
     <string name="hello_message">مرحبا بالعالم!</string>
-    <string name="ButtonText">I\’m a button</string>
+    <string name="ButtonText">أنا زر</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="login_hint">اسم تسجيل الدخول</string>
+    <string name="password">كلمة المرور</string>
+    <string name="switchQuestion">ماذا يفعل هذا؟</string>
+    <string name="RadioButton">زر</string>
+    <string name="CheckBox">خانة الاختيار</string>
+    <string name="Camera">آلة تصوير</string>
 </resources>
