@@ -10,4 +10,20 @@
     <string name="RadioButton">زر</string>
     <string name="CheckBox">خانة الاختيار</string>
     <string name="Camera">آلة تصوير</string>
+    <string name="checkbox_finish_text">إنهاء الفعالية</string>
+    <string name="dialog_message">هل تريد إنهاء الفعالية؟</string>
+    <string name="dialog_title">إنهاء الفعالية</string>
+    <string name="ok">نعم</string>
+    <string name="cancel">لا</string>
+    <string name="cameraPermission">يلزم السماح بالتقاط الصور.</string>
+    <string name="switchOn">تم تشغيل الزر</string>
+    <string name="switchOff">تم إطفاء الزر</string>
+    <string name="noCamera">لم يتم العثور على تطبيق الكاميرا</string>
+    <string name="response">الرد من ListItemsActivity</string>
+    <string name="responseActual">ها هو ردي</string>
+    <string name="invalidEmail">البريد الإلكتروني غير صالح</string>
+    <string name="emptyPassword">لا يمكن أن تكون كلمة المرور فارغة</string>
+    <string name="MainActivityStart">MainActivity تم بدء</string>
+    <string name="LoginActivityStart">LoginActivity تم بدء</string>
+    <string name="ListItemsActivityStart">ListItemsActivity تم بدء</string>
 </resources>
