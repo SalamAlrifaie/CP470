@@ -6,9 +6,12 @@ import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.activity.EdgeToEdge;
+import androidx.core.app.NavUtils;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import android.view.MenuItem;
 import android.widget.Switch;
 import android.widget.Toast;
 import android.content.Intent;
@@ -23,6 +26,8 @@ import androidx.core.content.ContextCompat;
 import android.content.DialogInterface;
 import android.widget.CheckBox;
 import androidx.appcompat.app.AlertDialog;
+
+import java.util.Objects;
 
 public class ListItemsActivity extends AppCompatActivity {
     private static final String TAG = "ListItemsActivity";
@@ -46,7 +51,6 @@ public class ListItemsActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
         checkBox = findViewById(R.id.checkBox1);
         checkBox.setOnCheckedChangeListener((buttonView, isChecked) -> {
             showFinishDialog();

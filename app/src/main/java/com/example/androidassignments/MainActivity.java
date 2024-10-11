@@ -12,10 +12,11 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
-    private static final int REQUEST_CODE_LIST_ITEMS = 10;
+    protected static final int REQUEST_CODE_LIST_ITEMS = 10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         // uncomment the following line for debugging (toast msg)
         //print(getString(R.string.MainActivityStart));
 
@@ -41,6 +43,24 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(intent, REQUEST_CODE_LIST_ITEMS);
             }
         });
+        findViewById(R.id.chatButton).setOnClickListener(v -> {
+            Log.i(TAG, "User clicked Start Chat");
+
+
+            // Create an intent to open the ChatWindow activity
+            Intent intent = new Intent(MainActivity.this, ChatWindow.class);
+            startActivity(intent);
+        });
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle the "Up" button click event
+        if (item.getItemId() == android.R.id.home) {
+            onBackPressed();  // Navigate to the parent activity
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     public void print(String message) {

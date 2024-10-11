@@ -26,4 +26,15 @@
     <string name="MainActivityStart">MainActivity تم بدء</string>
     <string name="LoginActivityStart">LoginActivity تم بدء</string>
     <string name="ListItemsActivityStart">ListItemsActivity تم بدء</string>
+    <string name="startChat">ابدأ الدردشة</string>
+    <string name="outgoingMsg">رسالة صادرة</string>
+    <string name="incomingMsg">رسالة واردة</string>
+    <string name="msgHint">اكتب رسالتك</string>
+    <string name="send">إرسال</string>
+    <string name="outgoingCallDes">أيقونة المكالمات الصادرة</string>
+    <string name="incomingCallDes">أيقونة المكالمات الواردة</string>
+    <string name="LabelMain">الفعالية الرئيسية</string>
+    <string name="LabelLogin">فعالية تسجيل الدخول</string>
+    <string name="LabelChat">فعالية نافذة الدردشة</string>
+    <string name="LabelListItems">فعالية عناصر القائمة</string>
 </resources>

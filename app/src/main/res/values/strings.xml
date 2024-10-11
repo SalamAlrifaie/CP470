@@ -25,4 +25,15 @@
     <string name="MainActivityStart">MainActivity started</string>
     <string name="LoginActivityStart">LoginActivity started</string>
     <string name="ListItemsActivityStart">ListItemsActivity started</string>
+    <string name="startChat">Start Chat</string>
+    <string name="outgoingMsg">Outgoing message</string>
+    <string name="incomingMsg">Incoming message</string>
+    <string name="msgHint">Type your message</string>
+    <string name="send">Send</string>
+    <string name="outgoingCallDes">Outgoing Call Icon</string>
+    <string name="incomingCallDes">Incoming Call Icon</string>
+    <string name="LabelMain">Main Activity</string>
+    <string name="LabelLogin">Login Activity</string>
+    <string name="LabelChat">Chat Window Activity</string>
+    <string name="LabelListItems">List Items Activity</string>
 </resources>
