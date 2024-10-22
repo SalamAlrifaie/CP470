@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools" >
 
     <uses-permission android:name="android.permission.CAMERA" />
 
@@ -17,50 +17,42 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidAssignments"
-        tools:targetApi="31">
+        tools:targetApi="31" >
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/LabelMain"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".TestToolbar"
+            android:exported="true"
+            android:theme="@style/Theme.TestToolbar"/>
 
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
-            android:value=".LoginActivity" />
-
-        <!-- chat activity -->
+            android:value=".LoginActivity" /> <!-- chat activity -->
         <activity
             android:name=".ChatWindow"
+            android:exported="true"
             android:label="@string/LabelChat"
             android:parentActivityName=".MainActivity"
-            android:windowSoftInputMode="adjustResize"
-            android:exported="true">
-        </activity>
-
-        <!-- list items activity -->
+            android:windowSoftInputMode="adjustResize" /> <!-- list items activity -->
         <activity
             android:name=".ListItemsActivity"
+            android:exported="true"
             android:label="@string/LabelListItems"
-            android:parentActivityName=".MainActivity"
-            android:exported="true">
-        </activity>
-
-        <!-- login activity (home screen) -->
+            android:parentActivityName=".MainActivity" /> <!-- login activity (home screen) -->
         <activity
             android:name=".LoginActivity"
-            android:label="@string/LabelLogin"
-            android:exported="true">
+            android:exported="true"
+            android:label="@string/LabelLogin" >
 
             <!-- INTENT FILTER -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-        </activity>
-
-        <!-- main activity -->
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/LabelMain"
-            android:parentActivityName=".LoginActivity"
-            android:exported="true">
-
         </activity>
     </application>
 
