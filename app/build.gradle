@@ -1,5 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
+    // Remove or comment out the Kotlin plugin
+    // alias(libs.plugins.kotlin.android)
 }
 
 android {
@@ -18,19 +20,25 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = false
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
     buildFeatures {
-        viewBinding = true
+        viewBinding true
+    }
+    // Removed kotlinOptions block
+
+    // Add testOptions block
+    testOptions {
+        unitTests {
+            includeAndroidResources true
+            returnDefaultValues = true // Add this line
+        }
     }
 }
 
@@ -42,6 +50,7 @@ dependencies {
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
     implementation(libs.navigation.runtime)
+    implementation(libs.core)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
@@ -49,12 +58,11 @@ dependencies {
     // my added lines
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test:core:1.5.0")
-    testImplementation("org.mockito:mockito-core:3.12.4")
+    testImplementation("org.mockito:mockito-core:4.11.0")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test:runner:1.5.2")
     androidTestImplementation ("androidx.test.espresso:espresso-core:3.5.0")
 
-    //on assignment part 4
-    implementation ("androidx.navigation:navigation-fragment-ktx:2.5.3") // Check for the latest version
-    implementation ("androidx.navigation:navigation-ui-ktx:2.5.3")
+    implementation("androidx.navigation:navigation-fragment:2.5.3")
+    implementation("androidx.navigation:navigation-ui:2.5.3")
 }

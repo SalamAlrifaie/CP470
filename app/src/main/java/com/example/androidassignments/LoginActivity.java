@@ -31,6 +31,7 @@ public class LoginActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_login);
 
+        Log.i(TAG, "onCreate called in LoginActivity");
         // uncomment the following line for debugging (toast msg)
         //print(getString(R.string.LoginActivityStart));
 

@@ -44,8 +44,7 @@
             android:parentActivityName=".MainActivity" /> <!-- login activity (home screen) -->
         <activity
             android:name=".LoginActivity"
-            android:exported="true"
-            android:label="@string/LabelLogin" >
+            android:exported="true">
 
             <!-- INTENT FILTER -->
             <intent-filter>
