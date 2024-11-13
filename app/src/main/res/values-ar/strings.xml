@@ -99,4 +99,11 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+
+    <string name="weather">توقعات الطقس</string>
+    <string name="weatherImageDesc">الطقس الحالي</string>
+    <string name="currentTemp">جاري تحميل الطقس الحالي</string>
+    <string name="minTemp">جاري تحميل درجة الحرارة القصوى</string>
+    <string name="maxTemp">جاري تحميل الحد الأدنى لدرجة الحرارة</string>
+    <string name="lastUpdate">آخر تحديث: --</string>
 </resources>
