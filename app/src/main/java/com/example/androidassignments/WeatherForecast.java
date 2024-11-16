@@ -45,7 +45,7 @@ public class WeatherForecast extends AppCompatActivity {
     private TextView minTemperatureTextView;
     private TextView maxTemperatureTextView;
     private ProgressBar progressBar;
-    private TextView lastUpdatedTextView; // Optional
+    private TextView lastUpdatedTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,7 +60,7 @@ public class WeatherForecast extends AppCompatActivity {
         minTemperatureTextView = findViewById(R.id.minTemp);
         maxTemperatureTextView = findViewById(R.id.maxTemp);
         progressBar = findViewById(R.id.progressBar);
-        lastUpdatedTextView = findViewById(R.id.lastUpdated); // If added
+        lastUpdatedTextView = findViewById(R.id.lastUpdated);
 
         // Debugging null views
         if (citySpinner == null) {
@@ -100,7 +100,7 @@ public class WeatherForecast extends AppCompatActivity {
         // Populate the Spinner
         populateCitySpinner();
 
-        // Set default selection (e.g., Ottawa)
+        // Set default selection (Ottawa)
         citySpinner.setSelection(getCityPosition("Ottawa"));
 
         // Set OnItemSelectedListener
@@ -453,7 +453,7 @@ public class WeatherForecast extends AppCompatActivity {
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
 
-            // Hide the ProgressBar by setting its visibility to INVISIBLE
+            // Hide the ProgressBar by setting visibility to INVISIBLE
             if (progressBar != null) {
                 progressBar.setVisibility(View.INVISIBLE);
             } else {
@@ -493,7 +493,7 @@ public class WeatherForecast extends AppCompatActivity {
                     Log.e("ForecastQuery", "weatherImageView is null in onPostExecute.");
                 }
 
-                // Update Last Updated Time with Enhanced Format
+                // Update Last Updated Time
                 if (lastUpdatedTextView != null) {
 
                     DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.MEDIUM, DateFormat.SHORT, Locale.getDefault());
