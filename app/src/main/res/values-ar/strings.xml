@@ -106,4 +106,8 @@
     <string name="minTemp">جاري تحميل درجة الحرارة القصوى</string>
     <string name="maxTemp">جاري تحميل الحد الأدنى لدرجة الحرارة</string>
     <string name="lastUpdate">آخر تحديث: --</string>
+
+    <string name="MsgHere">رسالة هنا</string>
+    <string name="id">ID=</string>
+    <string name="deleteMsg">احذف هذه الرسالة</string>
 </resources>

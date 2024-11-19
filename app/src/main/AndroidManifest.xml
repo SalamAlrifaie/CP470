@@ -21,6 +21,9 @@
         android:theme="@style/Theme.AndroidAssignments"
         tools:targetApi="31">
         <activity
+            android:name=".MessageDetails"
+            android:exported="false" />
+        <activity
             android:name=".WeatherForecast"
             android:exported="false"
             android:label="@string/weather"
@@ -43,7 +46,14 @@
             android:exported="true"
             android:label="@string/LabelChat"
             android:parentActivityName=".MainActivity"
-            android:windowSoftInputMode="adjustResize" /> <!-- list items activity -->
+            android:windowSoftInputMode="adjustResize" >
+            <!-- INTENT FILTER -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity><!-- list items activity -->
         <activity
             android:name=".ListItemsActivity"
             android:exported="true"
@@ -51,15 +61,8 @@
             android:parentActivityName=".MainActivity" /> <!-- login activity (home screen) -->
         <activity
             android:name=".LoginActivity"
-            android:exported="true">
+            android:exported="true"/>
 
-            <!-- INTENT FILTER -->
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>

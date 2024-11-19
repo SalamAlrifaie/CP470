@@ -105,7 +105,7 @@
     <string name="currentTemp">Current Temperature is loading</string>
     <string name="minTemp">Minimum Temperature is loading</string>
     <string name="maxTemp">Maximum Temperature is loading</string>
-    <string name="lastUpdate">Last Updated: --</string>
+    <string name="lastUpdate">Last Updated: —</string>
 
     <!-- String array for Canadian cities -->
     <string-array name="canadian_cities">
@@ -121,4 +121,8 @@
         <item>Victoria</item>
         <!-- Add more cities as needed -->
     </string-array>
+
+    <string name="MsgHere">MessageHere</string>
+    <string name="id">ID=</string>
+    <string name="deleteMsg">DELETE THIS MESSAGE</string>
 </resources>
